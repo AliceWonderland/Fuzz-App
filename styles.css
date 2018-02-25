@@ -1,66 +1,75 @@
-/* Variables */
-
-@body-bg-color: #83b692; // green
-@text-color: #fff; // white
-@button-bg-color: #f9627d; // pink
-
-/* LESS CSS */
-body {
-    background: @body-bg-color;
-    color: @text-color;
+/* ------------------------------------------------ */
+/* GLOBALS */
+/* ------------------------------------------------ */
+*, html, body{
+    font-family: 'Karla', sans-serif;
 }
-
 
 header > div{
     margin-bottom:8px;
 }
 
-
-/*SAMPLE1*/
-.sample1{
-    /*global styles for .sample1*/
-    font-family: 'Karla', sans-serif;
-    background-color: #333;
-}
-
-.sample1 > nav {
-    background-color: #efefef;
-    height: auto;
+header > div > nav {
     color: red;
     padding: 10px;
+    background-color: #efefef;
 
     display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
     display: -ms-flexbox;  /* TWEENER - IE 10 */
     display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
     display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+}
+
+header > div > nav > ul {
+    padding: 0;
+
+    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+}
+
+header > div > nav > ul > li {
+    list-style: none;
+    outline: 1px solid red;
+    font-size: 0.5em;
+    padding: 10px;
+    margin: 5px;
+    white-space: nowrap;
+}
+
+header > div > nav > ul > li:hover {
+    color: blue;
+    outline: 1px solid blue;
+}
+
+
+/* ------------------------------------------------ */
+/* SPECIFIC CLASSES */
+/* ------------------------------------------------ */
+
+/*SAMPLE1*/
+.sample1{
+
+}
+
+.sample1 > nav {
+    height: auto;
+
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
 .sample1 > nav > ul {
-    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-    display: -ms-flexbox;  /* TWEENER - IE 10 */
-    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-    display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 0;
     flex-grow: 3;
 }
 
-.sample1 > nav > ul li {
-    list-style: none;
-    padding: 10px;
-    border: 1px solid red;
-    margin: 5px;
-    white-space: nowrap;
-    font-size: 0.5em;
-}
+.sample1 > nav > ul > li {
 
-.sample1 > nav > ul li:hover {
-    color: blue;
-    border: 1px solid blue;
 }
 
 .sample1 > nav > .logo {
@@ -85,21 +94,12 @@ header > div{
 
 /*SAMPLE2*/
 .sample2{
-    /*global styles for .sample1*/
-    font-family: 'Karla', sans-serif;
-    background-color: #333;
+
 }
 
 .sample2 > nav {
-    background-color: #efefef;
     height: 50px;
-    color: red;
-    padding: 10px;
 
-    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-    display: -ms-flexbox;  /* TWEENER - IE 10 */
-    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-    display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -113,10 +113,6 @@ header > div{
 }
 
 .sample2 > nav > ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: nowrap;
@@ -131,18 +127,8 @@ header > div{
     overflow: auto;
 }
 
-.sample2 > nav > ul li {
-    list-style: none;
-    padding: 10px;
-    border: 1px solid red;
-    margin: 5px;
-    white-space: nowrap;
-    font-size: 0.5em;
-}
+.sample2 > nav > ul > li {
 
-.sample2 > nav > ul li:hover {
-    color: blue;
-    border: 1px solid blue;
 }
 
 .sample2 > nav > .logo {
@@ -168,21 +154,12 @@ header > div{
 
 /*SAMPLE3*/
 .sample3{
-    /*global styles for .sample1*/
-    font-family: 'Karla', sans-serif;
-    background-color: #333;
+
 }
 
 .sample3 > nav {
-    background-color: #efefef;
     height: 145px;
-    color: red;
-    padding: 10px;
 
-    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-    display: -ms-flexbox;  /* TWEENER - IE 10 */
-    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-    display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -196,10 +173,6 @@ header > div{
 }
 
 .sample3 > nav > ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
@@ -216,17 +189,7 @@ header > div{
 }
 
 .sample3 > nav > ul li {
-    list-style: none;
-    padding: 10px;
-    border: 1px solid red;
-    margin: 5px;
-    white-space: nowrap;
-    font-size: 0.5em;
-}
 
-.sample3 > nav > ul li:hover {
-    color: blue;
-    border: 1px solid blue;
 }
 
 .sample3 > nav > .logo {
@@ -249,8 +212,9 @@ header > div{
     flex-grow: 1;
 }
 
-
-/*VIEWPORTS*/
+/* ------------------------------------------------ */
+/* VIEWPORTS */
+/* ------------------------------------------------ */
 /*Breakpoints Guide https://medium.freecodecamp.org/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862*/
 
 
@@ -294,8 +258,9 @@ header > div{
 }
 
 
-
+/* ------------------------------------------------ */
 /*ignore below*/
+/* ------------------------------------------------ */
 main {
     display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
     display: -ms-flexbox;  /* TWEENER - IE 10 */
@@ -306,7 +271,7 @@ main {
 }
 
 main div{
-    border: 1px solid #efefef;
+    outline: 1px solid #efefef;
     border-radius: 10px;
     padding: 20px;
     margin: 17px;
@@ -316,3 +281,14 @@ main div{
 ol {
     padding-left: 20px;
 }
+
+/*!* Variables *!*/
+/*@body-bg-color: #83b692; // green*/
+/*@text-color: #fff; // white*/
+/*@button-bg-color: #f9627d; // pink*/
+
+/*!* LESS CSS *!*/
+/*body {*/
+/*background: @body-bg-color;*/
+/*color: @text-color;*/
+/*}*/

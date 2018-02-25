@@ -8,11 +8,11 @@ All scripts are processed on the client-side (in the browser). There is no serve
 Pure CSS for Responsive behavior. No JS.
 
 ### Responsive Skeleton Using:
-Pure HTML/CSS/JS
+Pure HTML/CSS/JS, FlexBox
 
 XMLHttpRequest Object + JSON
 
-CSS FlexBox
+
 
 ### Supporting Tools:
 [Google Fonts](https://fonts.google.com/)
@@ -53,3 +53,7 @@ Repeated styles in css for ease of cut/copy for now
 CSS Prefixes for Brower Support
 
 CSS can be written and organized in many ways given the tools used, situation, and guidelines. My approach, get a barebones down that fits most of what I'm looking for. Then step back, consider re-factoring options. Choose one.
+
+Ended up spending a lot of time doing research on best practices for responsive layout patterns, viewport, resolution, and device best practices, best solutions for css, so did not use an application framework like React.
+
+Design may not look similar but the skeleton is there. Chosen display styles are for ease of reference rather than to translate design.
