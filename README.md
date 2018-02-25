@@ -3,15 +3,17 @@
 ## What Is It?
 A single static HTML page built to illustrate a responsive nav skeleton cross-browser and platform compatible written in vanilla everything.
 
-All scripts are processed on the client-side (in the browser). There is no server-side processing or compiling.
+All scripts are processed on the client-side (in the browser). Requires no server or server-side processing or compiling.
 
 Pure CSS for Responsive behavior. No JS.
 
-### Responsive Skeleton Using:
+#### Responsive Skeleton Using:
 Pure HTML/CSS/JS, FlexBox
 
 XMLHttpRequest Object + JSON
 
+## Why Is it?
+A CSS study in how to approach responsive design with broad or almost no guidelines.
 
 
 ### Supporting Tools:
@@ -41,9 +43,11 @@ Split between two main categories: Desktops + Laptops or Tablets + Smartphones.
 * larger than 1200px (large devices)
 
 ### Responsive Pattern
+Flex Row Auto Height for Mobile Devices
 Flex Row for under 12 items
 Flex Column for 12-20 items
 Dropdown for 24 items and over
+
 
 ### Notes
 Great opportunity to use a CSS Pre-Processor SASS or LESS @mixins to set variable values
@@ -57,3 +61,7 @@ CSS can be written and organized in many ways given the tools used, situation, a
 Ended up spending a lot of time doing research on best practices for responsive layout patterns, viewport, resolution, and device best practices, best solutions for css, so did not use an application framework like React.
 
 Design may not look similar but the skeleton is there. Chosen display styles are for ease of reference rather than to translate design.
+
+Design Process - I coded out various menu displays. Played with those to see responsive behaviors. Combined all bevaiors into one master nav.
+
+To see block elements turn on OUTLINE in css line 6.

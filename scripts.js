@@ -12,16 +12,24 @@ function init() {
 		data=JSON.parse(this.responseText).links;
 		console.log(data);
 
-		// make menu list
-		var result="";
+		// make menu lists
+		var resultLists="";
 		for(var i=0; i<data.length; i++){
-			result+="<li>"+data[i].name+"</li>"
+			resultLists+="<li>"+data[i].name+"</li>";
+		}
+		var lists = document.getElementsByClassName("menu-links");
+		for(var x=0; x<lists.length; x++){
+			lists[x].innerHTML=resultLists;
 		}
 
-		// fill all menus with above data
-		var menus = document.getElementsByClassName("menu-links");
-		for(var x=0; x<menus.length; x++){
-			menus[x].innerHTML=result;
+		// make DD lists
+		var resultDD="<option>Select Category</option>";
+		for(var j=0; j<data.length; j++){
+			resultDD+="<option>"+data[j].name+"</option>";
+		}
+		var dd = document.getElementsByClassName("menu-dd");
+		for(var y=0; y<dd.length; y++){
+			dd[y].innerHTML=resultDD;
 		}
 	}
 }
