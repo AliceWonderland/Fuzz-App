@@ -37,24 +37,39 @@ https://developers.google.com/web/tools/chrome-devtools/
 
 ### Breakpoints for Resolutions + Viewports 
 Split between two main categories: Desktops + Laptops or Tablets + Smartphones.
-* smaller than or equal to 768 px (smartphones)
-* larger than 768 px (small devices, tablets)
-* larger than 992 px (medium devices)
-* larger than 1200px (large devices)
+* smaller than 500 px (phone)
+* larger than 500 px (tablet)
+* larger than 600 px (tablet landscape)
+* larger than 900 px (laptop, small devices)
+* larger than 1000 px (laptop, medium devices)
+* larger than 1800px (desktop, large devices)
 
 ### Responsive Pattern
-Flex Row Auto Height for Mobile Devices
-Flex Row for under 12 items
-Flex Column for 12-20 items
-Dropdown for 24 items and over
+Flex Row Auto Height + centered
+12 items
+800px-1200px
+
+Flex Row Auto Height + left
+12-24 items
+800px-1200px
+
+Flex Column + left
+24+ items
+800px-1200px
+
+Dropdown + centered
+24+ items
+500px-800px
+
+Mobile
+any number of items
+500px or less
 
 
 ### Notes
 Great opportunity to use a CSS Pre-Processor SASS or LESS @mixins to set variable values
 
 Repeated styles in css for ease of cut/copy for now
-
-CSS Prefixes for Brower Support
 
 CSS can be written and organized in many ways given the tools used, situation, and guidelines. My approach, get a barebones down that fits most of what I'm looking for. Then step back, consider re-factoring options. Choose one.
 
@@ -65,3 +80,5 @@ Design may not look similar but the skeleton is there. Chosen display styles are
 Design Process - I coded out various menu displays. Played with those to see responsive behaviors. Combined all bevaiors into one master nav.
 
 To see block elements turn on OUTLINE in css line 6.
+
+Not tested across PC but it uses HTML/CSS/JS supported by all platforms and browsers at worst IE11+

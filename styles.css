@@ -3,7 +3,7 @@
 /* ------------------------------------------------ */
 *, html, body{
     font-family: 'Karla', sans-serif;
-    outline: 1px solid orange;
+    /*outline: 1px solid orange;*/
 }
 
 header > div{
@@ -14,6 +14,7 @@ header > div > nav {
     color: red;
     padding: 10px;
     background-color: #efefef;
+    min-width: 435px;
 
     display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
     display: -ms-flexbox;  /* TWEENER - IE 10 */
@@ -44,10 +45,15 @@ header > div > nav > ul > li:hover {
     outline: 1px solid blue;
 }
 
+header > div > nav > select {
+    display: block;
+}
+
 header > div > nav > .logo {
     padding: 20px;
     font-size: x-large;
     font-weight: bold;
+    flex-grow: 1;
 }
 
 header > div > nav > .search{
@@ -57,11 +63,59 @@ header > div > nav > .search{
     display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
     flex-direction: row;
     justify-content: flex-end;
+    flex-grow: 1;
 }
+
+
+
+
+
+
+
+
+
+
 
 /* ------------------------------------------------ */
 /* SPECIFIC CLASSES */
 /* ------------------------------------------------ */
+
+/*SAMPLEMASTER*/
+.sample-master{
+
+}
+
+.sample-master > nav {
+    height: auto;
+
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sample-master > nav > ul {
+   flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding: 0;
+    flex-grow: 3;
+    /* -webkit-flex-grow: 1; */
+    -webkit-flex-shrink: 1;
+    /* -webkit-flex-basis: 100px; */
+    /* flex-grow: 1; */
+    flex-shrink: 1;
+    /* flex-basis: 100px; */
+    overflow: auto;
+}
+
+.sample-master > nav > ul > li {
+    margin: 1px;
+}
+
+.sample-master > nav > select {
+    display: none;
+}
+
 
 /*SAMPLE1*/
 .sample1{
@@ -84,14 +138,6 @@ header > div > nav > .search{
 
 .sample1 > nav > ul > li {
 
-}
-
-.sample1 > nav > .logo {
-    flex-grow: 1;
-}
-
-.sample1 > nav > .search{
-    flex-grow: 1;
 }
 
 /*SAMPLE2*/
@@ -119,26 +165,17 @@ header > div > nav > .search{
     justify-content: center;
     flex-wrap: nowrap;
     padding: 0;
-    flex-grow: 3;
-    /* -webkit-flex-grow: 1; */
+
+    -webkit-flex-grow: 3;
     -webkit-flex-shrink: 1;
-    /* -webkit-flex-basis: 100px; */
-    /* flex-grow: 1; */
+    flex-grow: 3;
     flex-shrink: 1;
-    /* flex-basis: 100px; */
+
     overflow: auto;
 }
 
 .sample2 > nav > ul > li {
     margin: 1px;
-}
-
-.sample2 > nav > .logo {
-    flex-grow: 1;
-}
-
-.sample2 > nav > .search{
-    flex-grow: 1;
 }
 
 
@@ -156,10 +193,8 @@ header > div > nav > .search{
 
     -webkit-flex-grow: 1; /* Safari 6.1+ */
     -webkit-flex-shrink: 1; /* Safari 6.1+ */
-    -webkit-flex-basis: 100px; /* Safari 6.1+ */
     flex-grow: 1;
     flex-shrink: 1;
-    /*flex-basis: 100px;*/
 }
 
 .sample3 > nav > ul {
@@ -167,27 +202,17 @@ header > div > nav > .search{
     justify-content: flex-start;
     flex-wrap: wrap;
     padding: 0;
-    flex-grow: 3;
-    /* -webkit-flex-grow: 1; */
+
+    -webkit-flex-grow: 3;
     -webkit-flex-shrink: 1;
-    /* -webkit-flex-basis: 100px; */
-    /* flex-grow: 1; */
+    flex-grow: 3;
     flex-shrink: 1;
-    /* flex-basis: 100px; */
-    /*overflow: auto;*/
+
     height: inherit;
 }
 
 .sample3 > nav > ul li {
     padding: 3px;
-}
-
-.sample3 > nav > .logo {
-    flex-grow: 1;
-}
-
-.sample3 > nav > .search{
-    flex-grow: 1;
 }
 
 
@@ -218,13 +243,12 @@ header > div > nav > .search{
     justify-content: center;
     flex-wrap: nowrap;
     padding: 0;
-    flex-grow: 3;
-    /* -webkit-flex-grow: 1; */
+
+    -webkit-flex-grow: 3;
     -webkit-flex-shrink: 1;
-    /* -webkit-flex-basis: 100px; */
-    /* flex-grow: 1; */
+    flex-grow: 3;
     flex-shrink: 1;
-    /* flex-basis: 100px; */
+
     overflow: auto;
 }
 
@@ -237,13 +261,9 @@ header > div > nav > .search{
 }
 
 
-.sample4 > nav > .logo {
-    flex-grow: 1;
-}
 
-.sample4 > nav > .search{
-    flex-grow: 1;
-}
+
+
 
 /* ------------------------------------------------ */
 /* VIEWPORTS */
@@ -256,10 +276,16 @@ header > div > nav > .search{
     body {
         background-color: lightsteelblue;
     }
+    .sample-master > nav > select {
+        display: block;
+    }
+    .sample-master > nav > ul {
+        display: none;
+    }
 }
 
 /*tablet + tablet landscape*/
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 501px) {
     body {
         background-color: lightblue;
     }
@@ -271,24 +297,91 @@ header > div > nav > .search{
     }
 }
 
+@media only screen and (min-width: 800px) {
+    body {
+        background-color: lightsteelblue;
+    }
+    .sample-master > nav {
+        height: auto;
+
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .sample-master > nav > ul {
+        justify-content: left;
+
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-grow: 3;
+    }
+}
+
+
+/*laptop*/
 @media only screen and (min-width: 900px) {
     body {
-        background-color: lightblue;
+        background-color: #add8e670;
+    }
+    .sample-master > nav > select {
+        /*display: block;*/
+    }
+    .sample-master > nav > ul {
+        /*display: none;*/
     }
 }
 
 /*desktop + large desktop up*/
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1000px) {
+    /*if 1000px + 20+ items*/
     body {
-        background-color: lightsteelblue;
+        background-color: #b0c4de8a;
     }
 }
 
-@media only screen and (min-width: 1800px) {
+@media only screen and (min-width: 1200px) {
     body {
         background-color: lightblue;
     }
+    .sample-master > nav {
+        height: 96px;
+
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        -webkit-flex-grow: 1; /* Safari 6.1+ */
+        -webkit-flex-shrink: 1; /* Safari 6.1+ */
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+
+    .sample-master > nav > ul {
+        flex-direction: column;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        padding: 0;
+
+        -webkit-flex-grow: 3;
+        -webkit-flex-shrink: 1;
+        flex-grow: 3;
+        flex-shrink: 1;
+
+        height: inherit;
+    }
+
+    .sample-master > nav > ul li {
+        padding: 3px;
+    }
 }
+
+
+
+
+
+
+
 
 
 /* ------------------------------------------------ */
@@ -309,6 +402,7 @@ main div{
     padding: 20px;
     margin: 17px;
     flex-basis: 18%;
+    background-color: #efefef47;
 }
 
 ol {

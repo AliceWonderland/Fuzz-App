@@ -22,7 +22,7 @@ function init() {
 			lists[x].innerHTML=resultLists;
 		}
 
-		// make DD lists
+		// make dd lists
 		var resultDD="<option>Select Category</option>";
 		for(var j=0; j<data.length; j++){
 			resultDD+="<option>"+data[j].name+"</option>";
@@ -33,12 +33,35 @@ function init() {
 		}
 	}
 }
-
 window.onload=init;
 
 
-// ignore below
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ignore below
 var app = new Vue({
 	el: '#app-1',
 	data: {
