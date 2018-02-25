@@ -1,0 +1,318 @@
+/* Variables */
+
+@body-bg-color: #83b692; // green
+@text-color: #fff; // white
+@button-bg-color: #f9627d; // pink
+
+/* LESS CSS */
+body {
+    background: @body-bg-color;
+    color: @text-color;
+}
+
+
+header > div{
+    margin-bottom:8px;
+}
+
+
+/*SAMPLE1*/
+.sample1{
+    /*global styles for .sample1*/
+    font-family: 'Karla', sans-serif;
+    background-color: #333;
+}
+
+.sample1 > nav {
+    background-color: #efefef;
+    height: auto;
+    color: red;
+    padding: 10px;
+
+    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sample1 > nav > ul {
+    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    flex-grow: 3;
+}
+
+.sample1 > nav > ul li {
+    list-style: none;
+    padding: 10px;
+    border: 1px solid red;
+    margin: 5px;
+    white-space: nowrap;
+    font-size: 0.5em;
+}
+
+.sample1 > nav > ul li:hover {
+    color: blue;
+    border: 1px solid blue;
+}
+
+.sample1 > nav > .logo {
+    padding: 20px;
+    margin: 17px;
+    font-size: x-large;
+    font-weight: bold;
+
+    flex-grow: 1;
+}
+
+.sample1 > nav > .search{
+    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+    flex-direction: row;
+    justify-content: flex-end;
+
+    flex-grow: 1;
+}
+
+/*SAMPLE2*/
+.sample2{
+    /*global styles for .sample1*/
+    font-family: 'Karla', sans-serif;
+    background-color: #333;
+}
+
+.sample2 > nav {
+    background-color: #efefef;
+    height: 50px;
+    color: red;
+    padding: 10px;
+
+    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    -webkit-flex-grow: 1; /* Safari 6.1+ */
+    -webkit-flex-shrink: 1; /* Safari 6.1+ */
+    -webkit-flex-basis: 100px; /* Safari 6.1+ */
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 100px;
+}
+
+.sample2 > nav > ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding: 0;
+    flex-grow: 3;
+    /* -webkit-flex-grow: 1; */
+    -webkit-flex-shrink: 1;
+    /* -webkit-flex-basis: 100px; */
+    /* flex-grow: 1; */
+    flex-shrink: 1;
+    /* flex-basis: 100px; */
+    overflow: auto;
+}
+
+.sample2 > nav > ul li {
+    list-style: none;
+    padding: 10px;
+    border: 1px solid red;
+    margin: 5px;
+    white-space: nowrap;
+    font-size: 0.5em;
+}
+
+.sample2 > nav > ul li:hover {
+    color: blue;
+    border: 1px solid blue;
+}
+
+.sample2 > nav > .logo {
+    padding: 20px;
+    margin: 17px;
+    font-size: x-large;
+    font-weight: bold;
+
+    flex-grow: 1;
+}
+
+.sample2 > nav > .search{
+    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+    flex-direction: row;
+    justify-content: flex-end;
+
+    flex-grow: 1;
+}
+
+
+/*SAMPLE3*/
+.sample3{
+    /*global styles for .sample1*/
+    font-family: 'Karla', sans-serif;
+    background-color: #333;
+}
+
+.sample3 > nav {
+    background-color: #efefef;
+    height: 145px;
+    color: red;
+    padding: 10px;
+
+    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    -webkit-flex-grow: 1; /* Safari 6.1+ */
+    -webkit-flex-shrink: 1; /* Safari 6.1+ */
+    -webkit-flex-basis: 100px; /* Safari 6.1+ */
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 100px;
+}
+
+.sample3 > nav > ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    flex-grow: 3;
+    /* -webkit-flex-grow: 1; */
+    -webkit-flex-shrink: 1;
+    /* -webkit-flex-basis: 100px; */
+    /* flex-grow: 1; */
+    flex-shrink: 1;
+    /* flex-basis: 100px; */
+    /*overflow: auto;*/
+    height: inherit;
+}
+
+.sample3 > nav > ul li {
+    list-style: none;
+    padding: 10px;
+    border: 1px solid red;
+    margin: 5px;
+    white-space: nowrap;
+    font-size: 0.5em;
+}
+
+.sample3 > nav > ul li:hover {
+    color: blue;
+    border: 1px solid blue;
+}
+
+.sample3 > nav > .logo {
+    padding: 20px;
+    margin: 17px;
+    font-size: x-large;
+    font-weight: bold;
+
+    flex-grow: 1;
+}
+
+.sample3 > nav > .search{
+    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+    flex-direction: row;
+    justify-content: flex-end;
+
+    flex-grow: 1;
+}
+
+
+/*VIEWPORTS*/
+/*Breakpoints Guide https://medium.freecodecamp.org/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862*/
+
+
+/*phone*/
+@media only screen and (max-width: 500px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+/*tablet + tablet landscape*/
+@media only screen and (min-width: 500px) {
+    body {
+        background-color: lightsteelblue;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    body {
+        background-color: lightcyan;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    body {
+        background-color: lightskyblue;
+    }
+}
+
+/*desktop + large desktop up*/
+@media only screen and (min-width: 1200px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    body {
+        background-color: lightsteelblue;
+    }
+}
+
+
+
+/*ignore below*/
+main {
+    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+main div{
+    border: 1px solid #efefef;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 17px;
+    flex-basis: 18%;
+}
+
+ol {
+    padding-left: 20px;
+}
