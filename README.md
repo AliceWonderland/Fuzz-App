@@ -7,21 +7,18 @@ All scripts are processed on the client-side (in the browser). Requires no serve
 
 Pure CSS for Responsive behavior. No JS.
 
-#### Responsive Skeleton Using:
-Pure HTML/CSS/JS, FlexBox
-
-XMLHttpRequest Object + JSON
-
-## Why Is it?
-A CSS study in how to approach responsive design with broad or almost no guidelines.
+#### Tools:
+* Pure HTML/CSS/JS, FlexBox
+* XMLHttpRequest Object + JSON
 
 
-### Supporting Tools:
-[Google Fonts](https://fonts.google.com/)
+#### Supporting Tools:
+* [Google Fonts](https://fonts.google.com/)
+* [FontAwesome](https://fontawesome.com/)
+* [Vue.js](https://vuejs.org/) (for placeholder body content only)
 
-[FontAwesome](https://fontawesome.com/)
-
-[Vue.js](https://vuejs.org/) (for placeholder body content only)
+#### Installation
+Requires no installation. Can be run from any local machine by clicking on html file. 
 
 ## Resources and Guidelines
 Google Responsive Web Design Patterns - https://developers.google.com/web/fundamentals/design-and-ux/responsive/
@@ -36,7 +33,7 @@ Viewport Testing - Chrome Dev Tools -
 https://developers.google.com/web/tools/chrome-devtools/
 
 ### Breakpoints for Resolutions + Viewports 
-Split between two main categories: Desktops + Laptops or Tablets + Smartphones.
+Split between two main categories: Desktops + Laptops or Tablets + Smartphones. Roughly-
 * smaller than 500 px (phone)
 * larger than 500 px (tablet)
 * larger than 600 px (tablet landscape)
@@ -45,31 +42,28 @@ Split between two main categories: Desktops + Laptops or Tablets + Smartphones.
 * larger than 1800px (desktop, large devices)
 
 ### Responsive Pattern
-Flex Row Auto Height + centered
-12 items
-800px-1200px
+**Flex Row Auto Height + centered**
+* 12 items
+* 800px-1200px
 
-Flex Row Auto Height + left
-12-24 items
-800px-1200px
+**Flex Row Auto Height + left**
+* 12-24 items
+* 800px-1200px
+* 24+ items
+* 500px-800px
 
-Flex Column + left
-24+ items
-800px-1200px
+**Flex Column + left**
+* 24+ items
+* 800px-1200px
 
-Dropdown + centered
-24+ items
-500px-800px
-
-Mobile
-any number of items
-500px or less
+**Dropdown + centered**
+* Mobile
+* any number of items
+* 600px or less
 
 
 ### Notes
 Great opportunity to use a CSS Pre-Processor SASS or LESS @mixins to set variable values
-
-Repeated styles in css for ease of cut/copy for now
 
 CSS can be written and organized in many ways given the tools used, situation, and guidelines. My approach, get a barebones down that fits most of what I'm looking for. Then step back, consider re-factoring options. Choose one.
 
@@ -81,4 +75,4 @@ Design Process - I coded out various menu displays. Played with those to see res
 
 To see block elements turn on OUTLINE in css line 6.
 
-Not tested across PC but it uses HTML/CSS/JS supported by all platforms and browsers at worst IE11+
+Not tested across PC but it uses HTML/CSS/JS supported by all platforms and browsers at worst IE11+. (*Must include css prefixes).
