@@ -272,7 +272,7 @@ header > div > nav > .search{
 
 
 /*phone*/
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
     body {
         background-color: lightsteelblue;
     }
@@ -285,15 +285,26 @@ header > div > nav > .search{
 }
 
 /*tablet + tablet landscape*/
-@media only screen and (min-width: 501px) {
+@media only screen and (min-width: 601px) {
     body {
         background-color: lightblue;
     }
-}
+    .sample-master > nav {
+        height: auto;
 
-@media only screen and (min-width: 600px) {
-    body {
-        background-color: lightsteelblue;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: left;
+    }
+    .sample-master > nav > ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-grow: 3;
+        justify-content: left;
+        margin-left: 10px;
+    }
+    .sample-master > nav > .search {
+        margin: 20px;
     }
 }
 
@@ -331,6 +342,7 @@ header > div > nav > .search{
         /*display: none;*/
     }
 }
+
 
 /*desktop + large desktop up*/
 @media only screen and (min-width: 1000px) {
@@ -375,6 +387,17 @@ header > div > nav > .search{
         padding: 3px;
     }
 }
+
+@media only screen and (min-width: 1400px) {
+    .sample-master > nav {
+        font-size: 1.7em;
+    }
+    .sample-master > nav > ul {
+        flex-grow: 10;
+    }
+
+}
+
 
 
 
