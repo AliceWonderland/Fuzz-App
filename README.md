@@ -1,5 +1,6 @@
 # Fuzz-App
 
+![](https://github.com/AliceWonderland/Fuzz-App/blob/master/fuzz-app.png)
 
 ## What Is It?
 A single static HTML page built to illustrate a responsive nav skeleton cross-browser and platform compatible written in vanilla everything.
