@@ -1,11 +1,14 @@
 # Fuzz-App
 
+
 ## What Is It?
 A single static HTML page built to illustrate a responsive nav skeleton cross-browser and platform compatible written in vanilla everything.
 
 All scripts are processed on the client-side (in the browser). Requires no server or server-side processing or compiling.
 
 Pure CSS for Responsive behavior. No JS.
+
+Live Demo: http://alicechuang.com/nerdery/fuzz/
 
 #### Tools:
 * Pure HTML/CSS/JS, FlexBox
