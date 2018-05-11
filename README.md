@@ -80,3 +80,5 @@ Design Process - I coded out various menu displays. Played with those to see res
 To see block elements turn on OUTLINE in css line 6.
 
 Not tested across PC but it uses HTML/CSS/JS supported by all platforms and browsers at worst IE11+. (*Must include css prefixes).
+
+Nginx https://enable-cors.org/server_nginx.html
